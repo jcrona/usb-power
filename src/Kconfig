@@ -1,0 +1,9 @@
+config USB_POWER
+	tristate "TP-Link TL-WR703N USB power switch (GPIO) driver"
+	depends on GENERIC_GPIO
+	help
+	  This will add a SYSFS entry allowing to control the USB power switch GPIO (useful to reset the USB port).
+	  This is supposed to be used on the TP-Link TL-WR703N router.
+
+	  This support is also available as a module.  If so, the module
+	  will be called usb-power.
